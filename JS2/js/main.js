@@ -12,3 +12,5 @@ console.log(myVariable.indexOf("Mat"));
 console.log(myVariable.slice(5, 8));
 
 console.log(myVariable.split(""));
+
+// End - String Methods
