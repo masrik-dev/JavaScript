@@ -51,3 +51,14 @@ console.log(Number.parseFloat(myString_2));
 console.log(Number.toString(myString_2)); */
 
 console.log(Number.parseFloat("4.324abc").toFixed(2).toString());
+
+//Nan is an acronym for Not a Number.
+//The Number.isNaN() method determines whether the passed value is NaN and its type is Number.
+
+console.log(Number.isNaN("MH"));
+
+//The global isNaN() function determines whether a value is NaN or not
+//Remember NaN = Not a Number
+
+console.log(isNaN(52));
+console.log(isNaN("MH"));
