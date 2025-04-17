@@ -91,3 +91,5 @@ console.log(Math.floor(Math.random() * 10) + 1);
 // `Math.ceil(Math.random()*10)` has a chance of resulting in zero.
 // `Math.floor((Math.random()*10)+1)` is the way to go!
 
+console.log("End Math Object");
+
