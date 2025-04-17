@@ -62,3 +62,32 @@ console.log(Number.isNaN("MH"));
 
 console.log(isNaN(52));
 console.log(isNaN("MH"));
+
+// -----------------------------------
+// Math Object
+
+console.log(Math.PI);
+console.log(Math.trunc(Math.PI));
+console.log(Math.round(3.4));
+console.log(Math.ceil(Math.PI));
+console.log(Math.floor(Math.PI));
+
+console.log(Math.pow(5, 2));
+console.log(Math.min(2, 0.5, 9));
+
+// For generating a random number from 0 to 1
+console.log(Math.random());
+
+// For generating a random number from 1 to 10
+console.log(Math.floor(Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 10) + 1);
+console.log(Math.floor(Math.random() * 10) + 1);
+
+
+// Choose `Math.floor()` , Not `Math.ceil` for generating a random number from 1 to 10.
+
+// Because `Math.random()` returns a range from 0 to 1 that includes 0 but not 1.
+
+// `Math.ceil(Math.random()*10)` has a chance of resulting in zero.
+// `Math.floor((Math.random()*10)+1)` is the way to go!
+
