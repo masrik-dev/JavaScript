@@ -106,8 +106,19 @@ console.log(Math.floor(Math.random() * 4 + 1));
 console.log(Math.floor(Math.random() * 4 + 1));
 
 console.log("Return a random letter from a name: 'Marvik'.");
-// Write a code that will return a random letter from a name:
-console.log("Marvik".charAt())
+
+// Let's write a code that will return a random letter from a name:
+
+const anyName = "Marvik";
+console.log("Marvik".charAt(Math.floor(Math.random() * anyName.length)));
+console.log("Marvik".charAt(Math.floor(Math.random() * anyName.length)));
+console.log("Marvik".charAt(Math.floor(Math.random() * anyName.length)));
+
+console.log("End");
+
+// Conditionals: If statements
+
+
 
 
 
