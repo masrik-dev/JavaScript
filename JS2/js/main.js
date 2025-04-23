@@ -93,3 +93,21 @@ console.log(Math.floor(Math.random() * 10) + 1);
 
 console.log("End Math Object");
 
+//----------------------------
+// Code challenge
+
+console.log(typeof"Marvik");
+console.log("Marvik".charAt());
+
+console.log("check")
+
+console.log(Math.floor(Math.random() * 4 + 1));
+console.log(Math.floor(Math.random() * 4 + 1));
+console.log(Math.floor(Math.random() * 4 + 1));
+
+console.log("Return a random letter from a name: 'Marvik'.");
+// Write a code that will return a random letter from a name:
+console.log("Marvik".charAt())
+
+
+
