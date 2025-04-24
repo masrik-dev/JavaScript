@@ -156,6 +156,36 @@ if (testScore >= 90) {
 console.log(grade);
 
 // Decision tree!
+let playerOne = "rock";
+let computer = "scissors";
+let result;
+if (playerOne === computer) {
+    result = "The game is tie!";
+} else if (playerOne === "rock") {
+    if (computer === "paper"){
+        result = "Computer wins!";
+    } else {
+        result = "playerOne wins!";
+    }
+} else if (playerOne === "paper") {
+    if (computer === "scissors"){
+        result = "Computer wins!";
+    } else {
+        result = "playerOne wins!";
+    }
+} else if (playerOne === "scissors") {
+    if (computer === "rock"){
+        result = "Computer wins!";
+    } else {
+        result = "playerOne wins!";
+    }
+}
 
+console.log(result);
+
+// End of If statements
+
+// Switch Statements
+console.log("Switch Statements");
 
 
