@@ -247,3 +247,38 @@ switch (playerTwo) {
         }
 }
 
+// Conditionals: Ternary Operator
+
+console.log("Ternary Operators")
+
+//syntax
+//condition ? ifTrue : ifFalse
+
+let soup2 = "Chicken Noodle Soup";
+let response = soup2 ? "Yes, we have soup." : "Sorry, no soup today.";
+console.log(response);
+
+let soup3;
+let response2 = soup3 ? "Yes, we have soup." : "Sorry, no soup today.";
+console.log(response2);
+
+let soup4 = "Chicken Noodle soup";
+let isCustomerBanned = false;
+let soupAccess = isCustomerBanned 
+    ? "Sorry, no soup for you!" : soup4 ? `Yes, we have ${soup4} today` : "Sorry, no soup today.";
+console.log(soupAccess);
+
+
+let testScore2 = 79;
+let myGrade = testScore2 > 89 
+    ? "A" 
+    : testScore2 > 79
+    ? "B"
+    : testScore2 > 69
+    ? "C"
+    : testScore2 > 59
+    ? "D"
+    : "F";
+console.log(`My test grade is a ${myGrade}.`);
+
+
