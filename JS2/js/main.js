@@ -265,7 +265,10 @@ console.log(response2);
 let soup4 = "Chicken Noodle soup";
 let isCustomerBanned = false;
 let soupAccess = isCustomerBanned 
-    ? "Sorry, no soup for you!" : soup4 ? `Yes, we have ${soup4} today` : "Sorry, no soup today.";
+    ? "Sorry, no soup for you!" 
+    : soup4 
+    ? `Yes, we have ${soup4} today.` 
+    : "Sorry, no soup today.";
 console.log(soupAccess);
 
 
@@ -281,4 +284,23 @@ let myGrade = testScore2 > 89
     : "F";
 console.log(`My test grade is a ${myGrade}.`);
 
+// rock, paper, scissors game
 
+let player3 = "rock";
+let computer3 = "paper";
+let result2 =
+    player3 === computer3
+        ? "Tie game!"
+        : player3 === "rock" && computer === "paper"
+        ? "Computer wins!"
+        : player3 === "paper" && computer === "scissors"
+        ? "Computer wins!"
+        : player3 === "scissors" && computer === "rock"
+        ? "Computer wins!"
+        : "player3 wins!";
+console.log(result2);
+
+// End of Ternary Operator
+
+// User Input
+console.log("User Input!");
