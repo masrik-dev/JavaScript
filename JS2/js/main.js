@@ -218,7 +218,7 @@ switch (Math.floor(Math.random() * 5 + 1)) {
 
 // rock, paper, scissors game using switch
 
-let playerTwo = "rock";
+let playerTwo = "scissors";
 let computerTwo = "paper";
 
 switch (playerTwo) {
@@ -227,21 +227,21 @@ switch (playerTwo) {
         break;
     case "rock":
         if (computerTwo === "paper") {
-            console.log("compurterTwo wins!");
+            console.log("computerTwo wins!");
         } else {
             console.log("playerTwo wins!");
         }
         break;
     case "paper":
-        if (compurterTwo === "scissors") {
-            console.log("compurterTwo wins!");
+        if (computerTwo === "scissors") {
+            console.log("computerTwo wins!");
         } else {
             console.log("playerTwo wins!");
         }
         break;
     default:
-        if (compurterTwo === "rock") {
-            console.log("compurterTwo wins!");
+        if (computerTwo === "rock") {
+            console.log("computerTwo wins!");
         } else {
             console.log("playerTwo wins!")
         }
