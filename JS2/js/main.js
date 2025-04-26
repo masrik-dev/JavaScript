@@ -188,4 +188,62 @@ console.log(result);
 // Switch Statements
 console.log("Switch Statements");
 
+switch (2) {
+    case 1:
+        console.log(1);
+        break;
+    case 2:
+        console.log(2);
+        break;
+    case 3:
+        console.log(3);
+        break;
+    default:
+        console.log("No match");
+}
+
+switch (Math.floor(Math.random() * 5 + 1)) {
+    case 1:
+        console.log(1);
+        break;
+    case 2:
+        console.log(2);
+        break;
+    case 3:
+        console.log(3);
+        break;
+    default:
+        console.log("No match");
+}
+
+// rock, paper, scissors game using switch
+
+let playerTwo = "rock";
+let computerTwo = "paper";
+
+switch (playerTwo) {
+    case computerTwo:
+        console.log("Tie game!");
+        break;
+    case "rock":
+        if (computerTwo === "paper") {
+            console.log("compurterTwo wins!");
+        } else {
+            console.log("playerTwo wins!");
+        }
+        break;
+    case "paper":
+        if (compurterTwo === "scissors") {
+            console.log("compurterTwo wins!");
+        } else {
+            console.log("playerTwo wins!");
+        }
+        break;
+    default:
+        if (compurterTwo === "rock") {
+            console.log("compurterTwo wins!");
+        } else {
+            console.log("playerTwo wins!")
+        }
+}
 
