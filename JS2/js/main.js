@@ -329,7 +329,7 @@ console.log("User Input!");
 // First Interactive Game
 console.log("Interactive Game")
 
-let playGame = confirm("Shall we play rock, paper, or scissors?");
+/* let playGame = confirm("Shall we play rock, paper, or scissors?");
 if (playGame) {
     //play
     let playerChoice = prompt("Please enter rock, paper, or scissors.");
@@ -351,6 +351,8 @@ if (playGame) {
                     ? `player5: ${player5}\nComputer: ${computer5} \nComputer wins!`
                     : `player5: ${player5}\nComputer: ${computer5} \nPlayer wins!`
                 alert(result5);
+                let playAgain = confirm("Play Again?");
+                playAgain ? location.reload() : alert("Ok, thanks for playing.");
         } else {
             alert("You didn't enter rock, paper, or scissors.")
         }
@@ -359,4 +361,8 @@ if (playGame) {
     }
 } else {
     alert("Ok, maybe next time.");
-}
+} */
+
+    
+
+
