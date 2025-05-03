@@ -364,5 +364,71 @@ if (playGame) {
 } */
 
     
+// End
 
+// Loops
+console.log("Loops");
 
+let myNumber2 = 0;
+while (myNumber2 < 50) {
+    console.log(myNumber2);
+    //myNumber2 = myNumber2 + 1;
+    myNumber2++;  //or we can do it
+}
+
+let myNumber3 = 0;
+while (myNumber3 < 20) {
+    console.log(myNumber3);
+    //myNumber3 = myNumber3 + 2;
+    myNumber3 += 2;  //or we can do it
+}
+
+// don't create an endless loop
+
+// do while loop
+let myNumber4 = 30;
+do {
+    console.log(myNumber4);
+} while (myNumber4 < 20) {
+    console.log(myNumber4);
+    myNumber4 += 5;
+}
+
+// for loop
+console.log("for loop");
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+}
+
+let name = "Syzniki";
+for (let i = 0; i <= name.length; i++) {
+    console.log(name.charAt(i));
+}
+
+// use of counter
+let name2 = "Syjniaki Dostoyvozski";
+let counter = 0;
+let myLetter;
+while (true) {
+    myLetter = name2[counter];
+    console.log(myLetter);
+    if (myLetter === "z") break; // or this loop will continue
+    counter++;
+}
+
+// continue key word
+console.log("continue key word");
+let name3 = "Syjniaki Dostoyvozski";
+let counter2 = 0;
+let myLetter2;
+while (counter2 <= 7) {
+    myLetter2 = name3[counter2];
+    console.log(myLetter2);
+    if (counter2 === 5) {
+        counter2 += 2; // for this number 6 letter "k" will be missing in output
+        continue;
+    }
+    if (myLetter2 === "z") break; // or this loop will continue
+    counter2++;
+}
+console.log(counter2);
