@@ -17,5 +17,13 @@ if (name) {
     console.log(name.trim().length);
     console.log(name.trim());
 } else {
-    console.log("You didn't enter your name.")
+    console.log("You didn't enter your name.");
+}
+
+// Loops  
+let myNumber = 0;
+while (myNumber < 50) {
+    console.log(myNumber);
+    // myNumber = myNumber + 1;
+    myNumber++;
 }

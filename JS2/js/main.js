@@ -433,3 +433,29 @@ while (counter2 <= 7) {
 }
 console.log(counter2);
 
+// Loops  
+let myNumber = 0;
+while (myNumber < 50) {
+    console.log(myNumber);
+    // myNumber = myNumber + 1;
+    myNumber++;
+    // myNumber += 2;  // increment it by 2.
+}
+
+// do while loop
+let myNumber = 0;
+// The do will execute at least one time on do while loop
+do {
+    myNumber +=2;
+    console.log(myNumber);
+} while (myNumber < 50);
+
+// for loop
+for (let i = 0; i <= 10; i++) {
+    console.log(i);
+}
+
+let name5 = "Wholesome";
+for (let i = 0; i<= name.length; i++) {
+    console.log(name.charAt(i));
+}
