@@ -432,3 +432,4 @@ while (counter2 <= 7) {
     counter2++;
 }
 console.log(counter2);
+
