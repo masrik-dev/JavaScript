@@ -434,21 +434,21 @@ while (counter2 <= 7) {
 console.log(counter2);
 
 // Loops  
-let myNumber = 0;
-while (myNumber < 50) {
-    console.log(myNumber);
+let myNumber5 = 0;
+while (myNumber5 < 50) {
+    console.log(myNumber5);
     // myNumber = myNumber + 1;
-    myNumber++;
+    myNumber5++;
     // myNumber += 2;  // increment it by 2.
 }
 
 // do while loop
-let myNumber = 0;
+let myNumber6 = 0;
 // The do will execute at least one time on do while loop
 do {
-    myNumber +=2;
-    console.log(myNumber);
-} while (myNumber < 50);
+    myNumber6 +=2;
+    console.log(myNumber6);
+} while (myNumber6 < 50);
 
 // for loop
 for (let i = 0; i <= 10; i++) {
@@ -510,3 +510,9 @@ const getUserNameFromEmail = email => {
     return email.slice(0, email.indexOf("@"));
 }
 console.log(getUserNameFromEmail("payerOne@SomeRandomEmail.com"));
+
+// Another example
+const toProperCase = (name7) => {
+    return name7.charAt(0).toUpperCase() + name7.slice(1).toLowerCase();
+};
+console.log(toProperCase("march"));
