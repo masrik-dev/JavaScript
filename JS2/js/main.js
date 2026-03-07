@@ -498,3 +498,15 @@ function sum(num3, num4) {
 console.log(sum(2, 6))
 console.log(sum(15))
 
+// Another example
+
+function getUserNameFromEmail(email) {
+    return email.slice(0, email.indexOf("@"));
+}
+console.log(getUserNameFromEmail("payerOne@SomeRandomEmail.com"));
+
+// Arrow functions
+const getUserNameFromEmail = email => {
+    return email.slice(0, email.indexOf("@"));
+}
+console.log(getUserNameFromEmail("payerOne@SomeRandomEmail.com"));
