@@ -456,6 +456,45 @@ for (let i = 0; i <= 10; i++) {
 }
 
 let name5 = "Wholesome";
-for (let i = 0; i<= name.length; i++) {
-    console.log(name.charAt(i));
+for (let i = 0; i<= name5.length; i++) {
+    console.log(name5.charAt(i));
 }
+
+let name6 = "Othomindies";
+let counter6 = 0;
+let myLetter6;
+while (counter6 <=6) {
+    myLetter6 = name6[counter6];
+    console.log(myLetter6);
+    if (counter6 == 1) {
+        counter6 += 2;
+        continue;
+    }
+    if (myLetter6 == "i") break
+    counter6++;
+}
+console.log(counter6);
+
+// Functions
+
+// Methods = Built-in Functions!
+
+let fx = "coMeTOsenCe".toLowerCase();
+console.log(fx);
+
+// Function Declaration Syntax:
+
+function sum(num1, num2) {
+    return num1 + num2;
+}
+console.log(sum(2, 6))
+// Another example
+function sum(num3, num4) {
+    if (num4 === undefined) {
+        return num3 + num3;
+    }
+    return num3 + num4;
+}
+console.log(sum(2, 6))
+console.log(sum(15))
+
