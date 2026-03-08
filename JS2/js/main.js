@@ -516,3 +516,52 @@ const toProperCase = (name7) => {
     return name7.charAt(0).toUpperCase() + name7.slice(1).toLowerCase();
 };
 console.log(toProperCase("march"));
+
+
+// var, let, and const
+// var x = 1; // It is a legacy code, don't use much
+// let x = 1; // Use let when the variable needs to change, like var
+// const x = 1; // Short for constant
+
+// global scope
+var x = 1; // function scoped
+let y = 2; // block scoped
+const z = 3;
+
+console.log(`global: ${x}`);
+console.log(`global: ${y}`);
+console.log(`global: ${z}`);
+
+function myFunc() {
+    var x = 10;
+    const z = 5;
+
+    console.log(`function: ${x}`);
+    console.log(`function: ${y}`);
+    console.log(`function: ${z}`);
+
+    {
+        var x = 11; // function scoped, not block scoped
+        const z = 6; // block scoped
+
+        console.log(`block: ${x}`);
+        console.log(`block: ${y}`);
+        console.log(`block: ${z}`);
+    }
+}
+
+myFunc();
+// lobal scope - block scope, and function scope
+
+// Understanding SCOPE
+// Global = Not in a function or block. Not desirable
+// Local = In a function or block. Not global.
+// var instantiates function() scoped variables.
+// let and const instantiate {block} scoped variables.
+
+// Helful Tips!
+// Avoid using var. Stick with const and let
+// Use const unless you need to reassign value.
+// Use let if you know you will reassign value.
+
+// Arrays
