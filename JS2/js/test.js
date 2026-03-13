@@ -64,4 +64,4 @@ console.log(myArray_2);
 const newArray_2 = myArray_2.reverse();
 console.log(newArray_2); 
 
-// join methods 2:21:02
+// join methods
