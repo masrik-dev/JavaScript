@@ -631,3 +631,24 @@ const newArray_2 = myArray_2.reverse();
 console.log(newArray_2); 
 
 // join methods
+const newArray_3 = myArray_2.join(); // it creates string
+const newString = newArray_3;
+console.log(newArray_3);
+
+// split methods
+const newArray_4 = newString.split(",");
+console.log(newArray_4);
+
+// concat methods
+const myArrayA = ["a", "b", "c"];
+const myArrayB = ["d", "e", "f"];
+
+const newArray_5 = myArrayB.concat(myArrayA);
+console.log(newArray_5);
+
+// spred operator [...]
+const newArray_6 = [...myArrayA, ...myArrayB];
+console.log(newArray_6);
+// if not spred operator
+const newArray_7 = [myArrayA, myArrayB];
+console.log(newArray_7);
