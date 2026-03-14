@@ -65,3 +65,4 @@ const newArray_2 = myArray_2.reverse();
 console.log(newArray_2); 
 
 // join methods
+// new line
