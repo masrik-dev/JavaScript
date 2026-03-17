@@ -86,3 +86,20 @@ console.log(newArray_6);
 // if not spred operator
 const newArray_7 = [myArrayA, myArrayB];
 console.log(newArray_7);
+
+// multiple array
+const equipShelfA = ["baseball", "football", "volleyball"];
+const equipShelfB = ["basketball", "golf balls", "tennis balls"];
+
+const clothesShelfA = ["tank tops", "t-shirts", "jerseys"];
+const clothesShelfB = ["sweat tops", "sweat pants", "hoodies"];
+
+console.log(equipShelfA[1]);
+//or
+console.log(clothesShelfB[0]);
+
+const equipDept = [equipShelfA, equipShelfB];
+const clothesDept = [clothesShelfA, clothesShelfB];
+
+console.log(equipDept[0][1]);
+console.log(clothesDept[1][0]);
