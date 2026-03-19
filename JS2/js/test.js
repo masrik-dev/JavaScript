@@ -103,3 +103,9 @@ const clothesDept = [clothesShelfA, clothesShelfB];
 
 console.log(equipDept[0][1]);
 console.log(clothesDept[1][0]);
+
+// Three dimensional array
+const sportsStore = [equipDept, clothesDept];
+console.log(sportsStore);
+console.log(sportsStore[0][0][1]);
+console.log(sportsStore[1][1][0]);
