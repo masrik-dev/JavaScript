@@ -21,3 +21,5 @@ console.log(anotherObj["alive"]);
 console.log(anotherObj["beverage"]); // for nested object
 
 console.log(anotherObj.beverage.morning); // for nested object
+
+// 2:56:28
