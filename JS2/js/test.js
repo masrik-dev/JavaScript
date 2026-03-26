@@ -10,6 +10,9 @@ const anotherObj = {
     beverage: {
         morning: "Coffee",
         afternoor: "Iced Tea"
+    },
+    action: function() {
+        return `Time for ${this.beverage.morning}`;
     }
 };
 
@@ -22,4 +25,59 @@ console.log(anotherObj["beverage"]); // for nested object
 
 console.log(anotherObj.beverage.morning); // for nested object
 
-// 2:56:28
+console.log(anotherObj.action());  // action is method
+
+// New Object
+
+const vehicle = {
+    wheels: 4,
+    engine: function() {
+        return "Vrrooom!";
+    }
+}
+
+const truck = Object.create(vehicle);
+truck.doors = 2;
+console.log(truck);
+console.log(truck.wheels);  // Inheritance
+console.log(truck.engine());
+
+const car = Object.create(vehicle);
+car.doors = 4;
+car.engine = function() {
+    return "Whooooo!";
+};
+console.log(car.engine());
+console.log(car.wheels);
+
+const tesla = Object.create(car);
+console.log(tesla.wheels);
+tesla.engine = function() {
+    return "Shhhhh....";
+};
+console.log(tesla.engine());
+
+// Let's create a Band Object
+const band = {
+    vocals: "Robert Plant",
+    guitar: "Jimmy Page",
+    bass: "John Paul Jones",
+    drums: "John Bonham"
+};
+
+
+console.log(Object.keys(band));
+console.log(Object.values(band));
+// for delete a property
+delete band.drums;
+console.log(band.hasOwnProperty("drums"));
+console.log(Object.keys(band));
+console.log(Object.values(band));
+
+for (let job in band) {
+    console.log(band[job]);  // for each of the object. if it is single object then band.X
+    console.log(`On ${job}, it's ${band[job]}!`);
+}
+
+
+// destructuring objects
