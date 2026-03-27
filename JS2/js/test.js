@@ -81,3 +81,11 @@ for (let job in band) {
 
 
 // destructuring objects
+const { guitar: myVariable, bass: myBass } = band;
+console.log(myVariable);
+console.log(myBass);
+
+function sings({ vocals }) { return `${vocals} sings!` };
+console.log(sings(band));
+
+// Javascript Classes
