@@ -29,3 +29,5 @@ myPizza.bake();
 myPizza.setToppings("sausage");
 myPizza.setToppings("olives");
 console.log(myPizza.getToppings());
+
+//3.25
