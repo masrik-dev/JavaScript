@@ -798,3 +798,44 @@ myPizza.bake();
 myPizza.setToppings("sausage");
 myPizza.setToppings("olives");
 console.log(myPizza.getToppings());
+
+
+// Super/parent class and child class
+class Pizza {
+    constructor(pizzaSize) {
+        this.size = pizzaSize;
+        this.crust = "original";
+    }
+    getCrust() {
+        return this.crust;
+    }
+    setCrust(pizzaCrust) {
+        this.crust = pizzaCrust;
+    }
+}
+
+class SpecialtyPizza extends Pizza {
+    constructor(pizzaSize) {
+        super(pizzaSize);      // the keyword calls the constructor of the parents
+        this.type = "The Works";
+    }
+    slice(){
+        console.log(`Our ${this.type} ${this.size} pizza has 8 slices.`);
+    }
+}
+
+const mySpecialty = new SpecialtyPizza("medium");
+mySpecialty.slice();
+
+
+// Factory Function
+function pizzaFactory(pizzaSize) {
+    const crust = "original";
+    const size = pizzaSize;
+    return {
+        bake: () => console.log(`Baking a ${size} ${crust} crust pizza.`)
+    };
+}
+
+const myPizza = pizzaFactory("small");
+myPizza.bake();

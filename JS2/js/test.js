@@ -1,33 +1,18 @@
 // Javascript Classes
+
 class Pizza {
-    constructor(pizzaType, pizzaSize) {
-        this.type = pizzaType;
-        this.size = pizzaSize;
-        this.crust = "original";
-        this.toppings = [];
+    constructor(pizzaSize) {
+        this._size = pizzaSize;
+        this._crust = "original";
     }
     getCrust() {
-        return this.crust;
+        return this._crust;
     }
     setCrust(pizzaCrust) {
-        this.crust = pizzaCrust;
-    }
-    getToppings() {
-        return this.toppings;
-    }
-    setToppings(topping){
-        this.toppings.push(topping);
-    }
-    bake() {
-        console.log(`Baking a ${this.size} ${this.type} ${this.crust} crust pizza.`);
+        this._crust = pizzaCrust;
     }
 }
 
-const myPizza = new Pizza("pepperoni", "small");
-myPizza.setCrust("thin");
-myPizza.bake();
-myPizza.setToppings("sausage");
-myPizza.setToppings("olives");
-console.log(myPizza.getToppings());
+// 3.37
 
-//3.25
+
