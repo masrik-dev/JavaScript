@@ -1,18 +1,28 @@
 // Javascript Classes
+//privet and public field
 
 class Pizza {
+    crust = "original";      //public field
+    #sauce = "traditional";  //privet field
+    #size;
     constructor(pizzaSize) {
-        this._size = pizzaSize;
-        this._crust = "original";
+        this.#size = pizzaSize;
     }
     getCrust() {
-        return this._crust;
+        return this.crust;
     }
     setCrust(pizzaCrust) {
-        this._crust = pizzaCrust;
+        this.crust = pizzaCrust;
+    }
+    hereYouGo() {
+        console.log(`Here's your ${this.crust} ${this.#sauce} sauce ${this.#size} pizza.`);
     }
 }
 
-// 3.37
+const myPizza = new Pizza("large");
+myPizza.hereYouGo();
+console.log(myPizza.getCrust()); //public field
+console.log(myPizza.sauce);     //privet field
+
 
 
