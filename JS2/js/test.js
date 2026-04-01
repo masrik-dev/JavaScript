@@ -1,28 +1,32 @@
-//JSON: JavaScript Object Notation
-/*
-JSON is used to send and receive data.
-JSON is a text format that is completely language independent.
-Meaning JSON is used to send & receive data in many languages
-...not just in JaveScript.
-*/
+// DOM - Document Object Model
+const view1 = document.getElementById("view1");
+console.log(view1);
+const view2 = document.querySelector("#view2");
+console.log(view2);
+view1.style.display = "flex";
+//view1.style.display = "none";
+view2.style.display = "flex";
 
-const myObj = {
-    name: "Dave",
-    hobbies: ["eat", "sleep", "code"],
-    hello: function () {
-        console.log("Hello!");
-    }
-};
-console.log(myObj);
-console.log(myObj.name);
-myObj.hello();
-console.log(typeof myObj);
+const views = document.getElementsByClassName("view");
+console.log(views);
+const sameViews = document.querySelectorAll(".view");
+console.log(sameViews);
 
-const sendJSON = JSON.stringify(myObj);
-console.log(sendJSON);
-console.log(typeof sendJSON);
-console.log(sendJSON.name);
+const divs = view1.querySelectorAll("div");
+console.log(divs);
+const sameDivs = view1.getElementsByTagName("div");
+console.log(sameDivs);
 
-const receiveJSON = JSON.parse(sendJSON);
-console.log(receiveJSON);
-console.log(typeof receiveJSON);
+const evenDivs = view1.querySelectorAll("div:nth-of-type(2nd)");
+console.log(evenDivs);
+for (let i = 0; i < evenDivs.length; i++) {
+    evenDivs[i].style.backgroundColor = "darkblue";
+    // evenDivs[i].style.width = "200px";
+    // evenDivs[i].style.height = "200px";
+}
+
+const navText = document.querySelector("nav h1");
+console.log(navText);
+navText.textContent = "Hello World!";
+const navbar = document.querySelector("nav");
+navbar.innerHTML = `<h1>Hello</h1> <p>This should align right.</p>`;
