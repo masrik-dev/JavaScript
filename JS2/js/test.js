@@ -19,6 +19,8 @@ const initApp = () => {
 
     view.addEventListener("click", (event) => {
         view.style.backgroundColor = "purple";
+        // view.classList.toggle("purple"); // if the color is not added then it add the color
+        // view.classList.toggle("darkblue"); // if the color is added then it remove the color
     }, false);
 
     div.addEventListener("click", (event) => {
@@ -26,9 +28,13 @@ const initApp = () => {
     }, false);
 
     h2.addEventListener("click", (event) => {
-        event.stopPropagation();
-        event.target.textContent = "Clicked";
+        // event.stopPropagation();
+        // event.target.textContent = "Clicked";
+        const myText = event.target.textContent;
+        myText === "My 2nd View"
+            ? (event.target.textContent = "Clicked")
+            : (event.target.textContent = "My 2nd View");
     }, false);
 };
 
-// 5.00.00
+// 5.12.33
